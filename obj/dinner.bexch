@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__dinner.o
+[PROJECT FILES]
+D:\Program\Adacore\bin\dinner.gpr
+20240411185838 56eb561932988df66457648096f5aedc
+[BOUND OBJECT FILES]
+D:\Program\Adacore\bin\obj\dinner.o
+[GENERATED SOURCE FILES]
+b__dinner.ads
+b__dinner.adb
+b__dinner.ali
+[RESULTING OPTIONS]
+-LD:\Program\Adacore\bin\obj\
+-LD:\Program\Adacore\bin\obj\
+-LD:/program/adacore/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+D:/program/adacore/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnarl.a
+D:/program/adacore/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads
