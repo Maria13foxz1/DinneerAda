@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project >
+  <Project>
+    <vfs_file>D:\Projects\Dinner\dinner.gpr</vfs_file>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\Program\Adacore\bin\dinner.gpr</vfs_project>
-      <vfs_file>D:\Program\Adacore\bin\src\dinner.adb</vfs_file>
+      <vfs_project>D:\Projects\Dinner\dinner.gpr</vfs_project>
+      <vfs_file>D:\Projects\Dinner\src\dinner.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 37" line=" 30" >
-      <vfs_project>D:\Program\Adacore\bin\dinner.gpr</vfs_project>
-      <vfs_file>D:\Program\Adacore\bin\src\dinner.adb</vfs_file>
+    <file_marker column=" 24" line=" 31" >
+      <vfs_project>D:\Projects\Dinner\dinner.gpr</vfs_project>
+      <vfs_file>D:\Projects\Dinner\src\dinner.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 21" line=" 5" >
-      <vfs_project>D:\Program\Adacore\bin\dinner.gpr</vfs_project>
-      <vfs_file>D:\Program\Adacore\bin\src\dinner.adb</vfs_file>
+    <file_marker current="true" column=" 4" line=" 7" >
+      <vfs_project>D:\Projects\Dinner\dinner.gpr</vfs_project>
+      <vfs_file>D:\Projects\Dinner\src\dinner.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>

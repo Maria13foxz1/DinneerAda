@@ -10,6 +10,7 @@ RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTIONS
 RV NO_IO
 RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_NESTED_FINALIZATION
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_TASK_HIERARCHY
@@ -23,8 +24,9 @@ RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1+
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U dinner%b		dinner.adb		1f99584b NE OO SU
+U dinner%b		dinner.adb		c7a09716 NE OO SU
 W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.real_time%s	a-reatim.adb		a-reatim.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -55,7 +57,7 @@ D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
 D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D dinner.adb		20240411192714 28fb0b6c dinner%b
+D dinner.adb		20240411203232 f0c2c431 dinner%b
 D gnat.ads		20210520051132 b5988c27 gnat%s
 D g-semaph.ads		20210520051128 9996864a gnat.semaphores%s
 D interfac.ads		20210520051132 edec285f interfaces%s
@@ -102,29 +104,30 @@ X 1 ada.ads
 16K9*Ada 20e8 13|1r6 1r23
 X 11 a-textio.ads
 58K13*Text_IO 725e16 13|1w10 1r27
-506U14*Put_Line 13|23s10 26s10
+506U14*Put_Line 13|24s10 28s10
 X 13 dinner.adb
-4U11*Dinner 4b11 38l5 38t11
+4U11*Dinner 4b11 41l5 41t11
 5W9 Fork<15|47W19> 6r27
-6a4 Forks(5W9) 24r10 25r10 27r10 28r10
-8T14 Philosofer 10l8 10e18 12b14 18m10 30l8 30t18 32r34
-9Y13 Start 9>19 17b14 21l11 21t16 36s22
-9i19 Id{integer} 18r27 19r25 20r26
-13i7 Left_Fork_Id{integer} 19m10 24r16 28r16
-14i7 Right_Fork_Id{integer} 20m10 25r16 27r16
-15i7 Id{integer} 18m21 23r34 26r34
-17i21 Id{integer}
-22i11 I{integer}
-32a4 Philosofers(8T14) 35r13 36r7
-35i8 I{integer} 36r19 36r28
+6a4 Forks(5W9) 26r10 27r10 29r10 30r10
+7w4 Table{15|47W19} 25r10 31r10
+9T14 Philosofer 11l8 11e18 13b14 19m10 33l8 33t18 35r34
+10Y13 Start 10>19 18b14 22l11 22t16 39s22
+10i19 Id{integer} 19r27 20r25 21r26
+14i7 Left_Fork_Id{integer} 20m10 26r16 30r16
+15i7 Right_Fork_Id{integer} 21m10 27r16 29r16
+16i7 Id{integer} 19m21 24r34 28r34
+18i21 Id{integer}
+23i11 I{integer}
+35a4 Philosofers(9T14) 38r13 39r7
+38i8 I{integer} 39r19 39r28
 X 14 gnat.ads
 34K9*GNAT 13|2r6 2r27 14|57e9
 X 15 g-semaph.ads
 38K14*Semaphores 13|2w11 2r32 15|97e20
-40i4*Default_Ceiling{20|101I12} 13|5r43
-47W19*Counting_Semaphore 13|5r21 15|68e26
-58Y13 Seize 13|24s30 25s31
-63U17 Release 13|27s31 28s30
+40i4*Default_Ceiling{20|101I12} 13|5r43 7r33
+47W19*Counting_Semaphore 13|5r21 7r11 15|68e26
+58Y13 Seize 13|25s16 26s30 27s31
+63U17 Release 13|29s31 30s30 31s16
 X 20 system.ads
 100I12*Any_Priority{integer}
 101I12*Priority{100I12}

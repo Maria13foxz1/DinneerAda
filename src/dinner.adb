@@ -4,6 +4,7 @@ with GNAT.Semaphores; use GNAT.Semaphores;
 procedure Dinner is
    type Fork is new Counting_Semaphore(1, Default_Ceiling);
    Forks: array (1..5) of Fork;
+   Table: Counting_Semaphore(4, Default_Ceiling);
 
    task type Philosofer is
       entry Start(Id: in Integer);
@@ -21,11 +22,13 @@ procedure Dinner is
       end Start;
       for I in 1..5 loop
          Put_Line("Philosofer" & Id'Img & " thinking");
+         Table.Seize;
          Forks(Left_Fork_Id).Seize;
          Forks(Right_Fork_Id).Seize;
          Put_Line("Philosofer" & Id'Img & " eating");
          Forks(Right_Fork_Id).Release;
          Forks(Left_Fork_Id).Release;
+         Table.Release;
       end loop;
    end Philosofer;
 
